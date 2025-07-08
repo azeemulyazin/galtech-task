@@ -1,0 +1,453 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+body{
+ overflow-x: hidden;
+}
+.main-banner{
+    padding: 30px 20px;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+}
+
+/* Offcanvas Styles */
+.offcanvas-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.offcanvas-menu.open {
+  right: 0;
+}
+.offcanvas-menu .close-menu {
+  background: none;
+  border: none;
+  font-size: 28px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+ header{
+    height: 110vh;
+    background-image: url("/assets/images/main-img.png");
+    padding: 10px 20px;
+    border: 1px solid #ff5000;
+    border-radius: 25px;
+    background-size: cover;
+ }
+ 
+ header .top-header{
+    text-align: center;
+    padding: 5px; 
+    background-color: #ff5000;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 100px;
+ font-family: "Kanit", sans-serif;
+ text-transform: uppercase;
+ font-weight: 600;
+ margin: 10px 0;
+}
+.main-nav ul{
+    list-style: none;
+    display: flex;
+    margin: 10px 0;
+        border: 1px solid #ff5000;
+width: 300px;
+padding: 5px 20px;
+justify-content: space-between;
+font-weight: 600;
+border-radius: 100px;
+}
+.main-nav ul li a{
+     font-family: "Kanit", sans-serif;
+color: #000000;
+font-size: 16px;
+text-transform: uppercase;
+text-decoration: none;
+}
+.logo img{
+    width: 200px;
+}
+.right-nav .btn{
+     font-family: "Kanit", sans-serif;
+color: #000000;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 600;
+}
+
+.right-nav .search{
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    padding: 0 20px;
+    border: 1px solid #ff5000;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+}
+ .btn-cart{
+    width: 100px;
+    height: 40px;
+    border-radius: 100px;
+    border: 1px solid #ff5000;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px !important;
+    padding: 0;
+    align-items: center;
+}
+.btn-cart span{
+    border-radius: 50%;
+    border: 1px solid #ff5000;
+    padding: 7px 14px;
+}
+.main-text{
+    width: 600px;
+    margin-top: 300px;
+}
+.main-text h1{
+    font-family: "Kanit", sans-serif;
+    color: #ff5000;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.main-text p{
+font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.main-text a{
+    height: 40px;
+    border-radius: 100px;
+    padding: 5px 20px;
+    border: 1px solid #ff5000;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ff5000;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.main-text a:hover{
+    background-color: #ff5000;
+    color: #ffffff;
+}
+
+.placement .product-card{
+height: 600px;
+    
+        position: relative;
+
+    margin: 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+.placement .product-card img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border: 1px solid #ff5000;
+    border-radius: 25px;
+}
+.placement-text{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    
+
+}
+.placement-text h3{
+    font-size: 72px;
+    margin-bottom: 10px;
+        font-family: "Kanit", sans-serif;
+        margin-top: -10px;
+
+}
+
+
+.marquee {
+display: flex;
+align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+}
+
+.track {
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+  
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee .content{
+    font-size: 38px;
+    font-family: "Kanit", sans-serif;
+    color: #ff5000;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 50px;
+    align-items: center;
+
+}
+.marquee .content span{
+    margin: 0 20px;
+
+}
+.marquee .content img{
+    width: 36px;
+    height: 36px;
+    opacity: .5;
+}
+
+
+.plump-section h2{
+    font-family: "Kanit", sans-serif;
+    color: #ff5000;
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.image-hover-box {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  height: 100%;
+}
+
+.main-img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.hover-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.image-container:hover .hover-overlay {
+  transform: translateY(0);
+}
+
+.hover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+    border-radius: 20px;
+
+}
+
+.shop-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+ height: 40px;
+    border-radius: 100px;
+    padding: 5px 20px;
+    border: 1px solid #ffffff;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 30px;
+    font-weight: 600;
+  z-index: 3;
+  background-color: transparent;
+  width: 80%;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.image-container:hover .shop-btn {
+      border: 1px solid #ff5000;
+      background-color: #ffffff;
+      color: #ff5000;
+
+}
+
+.custom-next-btn {
+  background-color: transparent;
+  color: #ff5000;
+  border: none;
+  padding: 8px 14px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ff5000;
+  border-radius: 50%;
+}
+
+.custom-next-btn:hover {
+  background-color: #444;
+}
+
+.product-item {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  text-align: left;
+}
+
+.product-img img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  transition: 0.3s ease;
+  border-radius: 20px;
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+      font-family: "Kanit", sans-serif;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.product-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.color-options {
+  display: flex;
+  justify-content: left;
+  gap: 8px;
+}
+
+.color-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.color-swatch.active {
+  border-color: #000;
+}
+.rate{
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    font-family: "Kanit", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+
+
+
+/* responsive */
+
+@media (max-width: 767px){
+.main-navbar.py-2{
+    padding: 10px 5px !important;
+}
+    .logo img{
+        width: 100px;
+    }
+    .main-banner{
+        padding: 20px 10px;
+    }
+    header{
+        padding: 10px 5px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        height: 90vh;
+    }
+    .main-text{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .main-text h1{
+        font-size: 48px;
+    }
+    .placement .product-card{
+        height: 400px;
+    }
+    .placement-text h3{
+        font-size: 48px;
+    }
+
+    .main-nav {
+    display: none !important;
+  }
+  .search {
+    display: none !important;
+  }
+  .logo {
+    order: 1;
+  }
+  .menu-toggle {
+    display: block !important;
+  }
+}
