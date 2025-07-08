@@ -429,7 +429,7 @@ align-items: center;
         margin-top: 40px;
     }
     .main-text h1{
-        font-size: 48px;
+        font-size: 32px;
     }
     .placement .product-card{
         height: 400px;
@@ -449,5 +449,23 @@ align-items: center;
   }
   .menu-toggle {
     display: block !important;
+  }
+
+  .placement .product-card img{
+    height: 400px;
+  }
+  .marquee{
+    height: 100px;
+  }
+  .marquee .content{
+    font-size: 18px;
+    padding: 10px;
+  }
+  .plump-section h2{
+    font-size: 46px;
+    line-height: 36px;
+  }
+  .product-item{
+    padding: 0;
   }
 }
