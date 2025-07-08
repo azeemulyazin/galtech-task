@@ -400,10 +400,180 @@ align-items: center;
     margin-bottom: 5px;
 
 }
+.cta-image{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
 
+.cta-text h2{
+    font-family: "Kanit", sans-serif;
+    color: #ff5000;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.cta-text p{
+        font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.cta-text a{
+        border-radius: 100px;
+    padding: 5px 20px;
+    border: 1px solid #ff5000;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ff5000;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.cta-text a:hover {
+    background-color: #ff5000;
+    color: #ffffff;
+}
+.trending .product-card {
+    position: relative;
+    margin: 20px;
+    text-align: center;
+    background-color: #ffffff;}
+.trending .placement-text span{
+    background-color: #ff5000;
+    border-radius: 50px;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
 
+.trending .placement-text h3 {
+    font-size: 64px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 56px;}
 
+    .single-product-slider .product-card {
+  
+  border-radius: 12px;
+  padding: 20px;
+  
+  transition: transform 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+}
+.trending-product-image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
 
+/* Price Styling */
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #111;
+}
+
+/* Custom Right Arrow */
+.custom-next-arrow {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: transparent;
+  color: #ff5000;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 99;
+  border: 1px solid #ff5000;
+}
+.trending-details{
+    text-align: left;
+}
+
+.trending-details .btn{
+        border-radius: 100px;
+    padding: 5px 20px;
+    border: 1px solid #ff5000;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+    color: #ff5000;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.trending-details .btn:hover {
+    background-color: #ff5000;
+    color: #ffffff;
+}
+
+footer{
+    background-color: #ff5000;
+    padding: 20px;
+    color: #ff5000;
+    font-family: "Kanit", sans-serif;
+    margin-top: 150px;
+}
+.top-footer{
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border: 1px solid #ff5000;
+    border-radius: 20px;
+    margin-top: -75px;
+}
+.top-footer h3{
+    font-family: "Kanit", sans-serif;
+    color: #ff5000;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.top-footer input{
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    padding: 0 20px;
+    border: 1px solid #ff5000;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+}
+.top-footer .btn{
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    padding: 0 20px;
+    border: 1px solid #ff5000;
+    font-family: "Kanit", sans-serif;
+    font-size: 16px;
+    background-color: #ff5000;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.footer-links h4{
+    font-family: "Kanit", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-links li a{
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
 /* responsive */
 
 @media (max-width: 767px){
@@ -482,4 +652,50 @@ align-items: center;
   .product-img img{
     height: 160px;
   }
+  .cta-image{
+    height: 150px;
+  }
+  .cta-text h2{
+    font-size: 24px;
+  }
+  .cta-text p{
+    font-size: 12px;
+  }
+  .cta-text a{
+    font-size: 14px;
+    
+  }
+  .trending .product-card img {
+    width: 100%;
+}
+ .trending span {
+   font-size: 12px;
+}
+.trending .placement-text h3{
+    font-size: 44px !important;
+    line-height: 40px;
+}
+ 
+
+}
+
+@media (max-width: 991px){
+    .logo img{
+        width: 100px;
+    }
+    .main-banner{
+        padding: 20px 10px;
+    }
+    header{
+        padding: 10px 5px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        height: 80vh;
+    }
+    .main-text{
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
 }

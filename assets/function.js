@@ -75,3 +75,26 @@ document.addEventListener("DOMContentLoaded", function () {
       mobileMenu.classList.remove("open");
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+  const $slider = $(".single-product-slider");
+
+  if ($slider.length) {
+    $slider.owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: false,
+      nav: false,
+      dots: false,
+      margin: 20,
+    });
+
+    const $nextArrow = $("#customNextArrow");
+
+    if ($nextArrow.length) {
+      $nextArrow.on("click", function () {
+        $slider.trigger("next.owl.carousel");
+      });
+    }
+  }
+});
