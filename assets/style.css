@@ -350,7 +350,7 @@ align-items: center;
   width: 100%;
   height: auto;
   max-height: 500px;
-  object-fit: contain;
+  object-fit: cover;
   transition: 0.3s ease;
   border-radius: 20px;
 }
@@ -467,5 +467,19 @@ align-items: center;
   }
   .product-item{
     padding: 0;
+  }
+  .product-name{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  .product-desc{
+    font-size: 12px;
+  }
+  .rate{
+    margin-top: 0;
+  }
+  .product-img img{
+    height: 160px;
   }
 }
