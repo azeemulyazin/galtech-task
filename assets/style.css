@@ -562,7 +562,6 @@ footer{
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 10px;
-    margin-top: 20px;
 }
 .footer-links li {
     margin-bottom: 15px;
@@ -573,6 +572,19 @@ footer{
     color: #ffffff;
     font-size: 16px;
     text-decoration: none;
+}
+.social-media ul{
+    list-style: none;
+    display: flex;
+}
+.social-media ul li{
+    margin: 0 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+.social-media ul li a{
+   
+    color: #ffffff;
 }
 /* responsive */
 
@@ -675,8 +687,28 @@ footer{
     font-size: 44px !important;
     line-height: 40px;
 }
- 
+footer{
+    margin-top: 70px;
+}
+ .top-footer h3{
+    text-align: center;
+    font-size: 28px;
+ }
+  .top-footer p{
+    text-align: center;
+ }
+.form-control{
+    margin-top: 10px;
+}
+.social-media ul{
+    margin: 0;
+    padding: 0;
 
+}
+.social-media ul li{
+    margin: 0 15px;
+    
+}
 }
 
 @media (max-width: 991px){
