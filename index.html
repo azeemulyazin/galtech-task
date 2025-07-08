@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
+
 <div class="container-fluid main-banner">
     <header>
         <div class="top-header">
@@ -64,6 +65,12 @@
       <li><a href="#">About</a></li>
       <li><a href="#">Learn</a></li>
     </ul>
+    <div class="mobile-search mt-4">
+      <form action="#" method="get">
+        <input type="text" class="form-control mb-2" placeholder="Search products..." />
+        <button type="submit" class="btn btn-primary w-100">Search</button>
+      </form>
+    </div>
   </div>
 </div>
 
@@ -363,6 +370,16 @@
        </div>
     </div>
 </footer>
+
+<div id="searchOffcanvas" class="offcanvas-top">
+  <div class="offcanvas-inner">
+    <button type="button" class="close-search">&times;</button>
+    <form action="#" method="get" class="search-form">
+      <input type="text" class="form-control" placeholder="Search for products...">
+      <button type="submit" class="btn btn-primary mt-2 w-100">Search</button>
+    </form>
+  </div>
+</div>
 
 
     <script src="assets/function.js"></script>

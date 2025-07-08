@@ -98,3 +98,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const openBtn = document.querySelector(".btn.search");
+  const closeBtn = document.querySelector(".close-search");
+  const searchOffcanvas = document.getElementById("searchOffcanvas");
+
+  if (openBtn && closeBtn && searchOffcanvas) {
+    openBtn.addEventListener("click", () => {
+      searchOffcanvas.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      searchOffcanvas.classList.remove("active");
+    });
+
+    // Optional: Close on ESC key
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        searchOffcanvas.classList.remove("active");
+      }
+    });
+  }
+});
+
